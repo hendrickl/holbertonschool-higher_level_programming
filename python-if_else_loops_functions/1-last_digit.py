@@ -10,5 +10,6 @@ elif lastDigit == 0:
     print(str0, number, "is", lastDigit, "and is 0")
 elif lastDigit < 6 and lastDigit != 0:
     if number < 0:
-        print(str0, number, "is", lastDigit * -1, "and is less than 6 and not 0")
+        lastDigit = number % 10
+        print(str0, number, "is", lastDigit, "and is less than 6 and not 0")
     print(str0, number, "is", lastDigit, "and is less than 6 and not 0")
