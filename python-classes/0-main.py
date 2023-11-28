@@ -5,6 +5,8 @@ Square = __import__('0-square').Square
 """Create an instance"""
 my_square = Square()
 
-"""Print the type and dictinary of the instance"""
+"""Print the type of the instance"""
 print(type(my_square))
+
+"""Print the dictionary of the instance"""
 print(my_square.__dict__)
