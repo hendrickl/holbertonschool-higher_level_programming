@@ -10,7 +10,6 @@ request(apiUrl, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('body' + body);
     const movies = JSON.parse(body).results;
 
     const moviesWithWedge = movies.filter(movie => {
