@@ -16,6 +16,6 @@ request(apiUrl, (error, response, body) => {
       return movie.characters.some(characterUrl => characterUrl.includes('/18/'));
     });
 
-    console.log(`Nombre de films avec Wedge Antilles : ${moviesWithWedge.length}`);
+    console.log(`${moviesWithWedge.length}`);
   }
 });
