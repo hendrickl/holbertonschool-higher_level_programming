@@ -16,8 +16,6 @@ request(url, (error, response, body) => {
     fs.writeFile(filePath, body, 'utf-8', (writeError) => {
       if (writeError) {
         console.error(writeError);
-      } else {
-        console.log(`${filePath}`);
       }
     });
   }
