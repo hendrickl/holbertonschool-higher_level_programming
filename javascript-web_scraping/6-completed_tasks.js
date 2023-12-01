@@ -15,8 +15,11 @@ request(apiUrl, (error, response, body) => {
 
  tasks.forEach(task => {
   if (task.completed) {
-   tasksCompleted[task.userId]++;
-  }
+        if (tasksCompleted[task.userId]) {
+          tasksCompleted[task.userId]++;
+        } else {
+          tasksCompleted[task.userId] = 1;
+        }
+      } 
  });
-   console.log('tasksCompleted :' + tasksCompleted);
 }); 
