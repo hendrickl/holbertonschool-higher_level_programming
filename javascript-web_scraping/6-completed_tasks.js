@@ -7,9 +7,6 @@ const apiUrl = process.argv[2];
 
 // Make a GET request to the specified API URL
 request(apiUrl, (error, response, body) => {
- console.log('body :' + body);
- console.log('body parsed :' + JSON.parse(body));
-
  const tasks = JSON.parse(body);
  const tasksCompleted = {};
 
