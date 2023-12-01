@@ -12,12 +12,12 @@ request(apiUrl, (error, response, body) => {
 
  tasks.forEach(task => {
   if (task.completed) {
-        if (tasksCompleted[task.userId]) {
-          tasksCompleted[task.userId]++;
-        } else {
+   if (tasksCompleted[task.userId]) {
+        tasksCompleted[task.userId]++;
+       } else {
           tasksCompleted[task.userId] = 1;
-        }
-      } 
+       }
+     } 
  });
  console.log(tasksCompleted);
 }); 
